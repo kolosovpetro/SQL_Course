@@ -94,7 +94,8 @@ SELECT title
 FROM movies
 WHERE POSITION('o' IN title) > LENGTH(title) - 3;
 
---Task 15: For every client display its email address constructed in the following way: lowercase first name, dot, lowercase last name, ’@wsb.pl’
+--Task 15: For every client display its email address constructed in the following way: 
+--lowercase first name, dot, lowercase last name, ’@wsb.pl’
 SELECT LOWER(first_name) || '.' || LOWER(last_name) || '@wsb.pl' AS client_email
 FROM clients;
 
