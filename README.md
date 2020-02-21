@@ -6,6 +6,6 @@ Contents
 * Selection
   * Lection https://ivoidgetter.github.io/library/data_bases/SQL01.pdf
   * Exercises https://ivoidgetter.github.io/library/data_bases/exercises/SQLExercise_01_Select.pdf
-* Joins ()
-  * Lection
-  * Exercises
+* Joins
+  * Lection https://ivoidgetter.github.io/library/data_bases/SQL02.pdf
+  * Exercises https://ivoidgetter.github.io/library/data_bases/exercises/SQLExercise_02_Joins.pdf
