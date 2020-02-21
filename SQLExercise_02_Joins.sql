@@ -163,3 +163,23 @@ JOIN clients cl ON cl.client_id = r.client_id
 JOIN copies cop ON cop.copy_id = r.copy_id
 JOIN movies m ON m.movie_id = cop.movie_id
 WHERE date_of_rental BETWEEN '2005-07-15' AND '2005-07-25';
+
+--Task 12: Different approach
+SELECT DISTINCT title
+FROM rentals r, clients cl, copies cop, movies m
+WHERE cl.client_id = r.client_id
+AND cop.copy_id = r.copy_id
+AND m.movie_id = cop.movie_id
+AND date_of_rental BETWEEN '2005-07-15' AND '2005-07-25';
+
+--Task 13: For clients that have the same first name as one of the actors display:
+--shared first name, last name of actor, last name of client (WRONG, NEED TO ASK)
+
+SELECT *
+FROM rentals r, clients c, copies cop, movies m, starring s, actors act
+WHERE cop.copy_id = r.copy_id
+AND m.movie_id = cop.movie_id
+AND s.movie_id = m.movie_id
+AND act.actor_id = s.actor_id
+AND c.first_name = act.first_name;
+
