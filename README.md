@@ -15,3 +15,6 @@ Contents
 * Subqueries
   * Lection https://ivoidgetter.github.io/library/data_bases/SQL04.pdf
   * Exercises https://ivoidgetter.github.io/library/data_bases/exercises/SQLExercise_04_Subqueries.pdf
+* DML (Data Manipulation Language) - Insert, Delete, Update
+  * Lection https://ivoidgetter.github.io/library/data_bases/SQL05.pdf
+  * Exercises https://ivoidgetter.github.io/library/data_bases/exercises/SQLExercise_05_DML.pdf
