@@ -92,3 +92,18 @@ FROM clients;
 
 --Task 9: Display names of clients that rented the same copies of movies as Brian
 --Griffin
+
+--main query
+SELECT DISTINCT first_name, last_name
+FROM clients c
+JOIN rentals r ON r.client_id = c.client_id
+WHERE copy_id IN (SELECT copy_id
+		  FROM clients c
+		  JOIN rentals r ON r.client_id = c.client_id
+		  WHERE first_name = 'Brian' AND last_name = 'Griffin');
+
+--subquery
+SELECT copy_id
+FROM clients c
+JOIN rentals r ON r.client_id = c.client_id
+WHERE first_name = 'Brian' AND last_name = 'Griffin';
